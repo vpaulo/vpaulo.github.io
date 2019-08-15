@@ -21,13 +21,12 @@
         <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Arizonia|Open+Sans:400,600&display=swap'>
     </noscript> -->
 
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/css/fonts.css">
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/css/main.css">
-    <noscript>
-        <link rel="stylesheet" href="/css/fonts.css">
-        <link rel="stylesheet" href="/css/main.css">
-    </noscript>
-
+    <!-- Firefox does not support preload so <link rel="preload" as="style" onload="this.rel = 'stylesheet'"
+        href="/css/main.css"> will not load-->
+    <link rel="preload" as="style" href="/css/fonts.css">
+    <link rel="preload" as="style" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/main.css">
 
     <title>Vitor Rodrigues</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
