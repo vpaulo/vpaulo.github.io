@@ -1,144 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Web developer, constantly learning and experiencing new things." />
+        <meta name="theme-color" content="#FFFFFF" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Web developer, constantly learning and experiencing new things.">
-    <meta name="theme-color" content="#FFFFFF" />
+        <link rel="canonical" href="https://vpaulo.github.io/" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="canonical" href="https://vpaulo.github.io/">
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+        <link rel="preload" as="style" href="/css/fonts.css" />
+        <link rel="preload" as="style" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="stylesheet" href="/css/main.css" />
 
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preload" as="style" href="/css/fonts.css">
-    <link rel="preload" as="style" href="/css/main.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/css/main.css">
-
-    <title>Vitor Rodrigues - Web developer</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123721310-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-123721310-1');
-    </script>
-</head>
-
-<body>
-    <input type="checkbox" id="theme">
-    <header>
-        <nav class="menu">
-            <a class="home" href="/" alt="Home">VR</a>
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <div class="label__toggle"></div>
-            </label>
-            <ol class="menu__list">
-                <li class="list__item">
-                    <a href="#components" alt="Components">Components</a>
-                </li>
-                <li class="list__item">
-                    <a href="#demos" alt="Demos">Demos</a>
-                </li>
-                <li class="list__item">
-                    <a href="#blog" alt="Blog">Blog</a>
-                </li>
-                <li class="theme">
-                    <label class="theme--toggle" for="theme">
-                        <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                            height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M195 125c0-26.3 5.3-51.3 14.9-74.1C118.7 73 51 155.1 51 253c0 114.8 93.2 208 208 208 97.9 0 180-67.7 202.1-158.9-22.8 9.6-47.9 14.9-74.1 14.9-106 0-192-86-192-192z">
-                            </path>
-                        </svg>
-                    </label>
-                </li>
-            </ol>
-        </nav>
-    </header>
-    <main>
-        <section class="section about">
-            <hgroup>
-                <h3>Hi, i'm </h3>
-                <h1 class="intro__name">Vitor Rodrigues</h1>
-                <h2>I build things for the web.</h2>
-            </hgroup>
-            <a class="arrow--down" href="#components">
-                <svg viewBox="0 0 56 72" xmlns="http://www.w3.org/2000/svg" width="56px" height="72px">
-                    <path stroke="currentColor" stroke-linejoin="miter" stroke-width="2" fill="none" d="M 28 0 v 71 l 28 -28 M 28 71 l -28 -28 Z"></path>
-                </svg>
-            </a>
-            <div class="social-media">
-                <a class="linkedin" href="https://www.linkedin.com/in/vitorpaulorodrigues" alt="Linkedin">
-                    <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
-                        <path
-                            d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z" />
-                    </svg>
-                </a>
-                <a class="github" href="https://github.com/vpaulo" alt="Github">
-                    <svg fill="#000000" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
-                        <path
-                            d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
-                        </path>
-                    </svg>
-                </a>
-                <a class="codepen" href="https://codepen.io/vpaulo/" alt="Codepen">
-                    <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
-                        <path
-                            d="M11.999,2L2.005,8.603l-0.006,6.795L11.993,22l9.994-6.603l0.006-6.795L11.999,2z M11.999,14l-3-2l3-2l3,2L11.999,14z M12.999,8.263V5.058l6.234,4.119l-2.432,1.621L12.999,8.263z M10.999,8.263l-3.802,2.535L4.765,9.177l6.234-4.119V8.263z M5.394,12l-1.393,0.929l0.002-1.856L5.394,12z M7.197,13.202l3.802,2.535v3.209l-6.237-4.121L7.197,13.202z M12.999,15.737l3.802-2.535l2.429,1.619l-6.232,4.117V15.737z M18.604,12l1.387-0.925l-0.002,1.848L18.604,12z" />
-                    </svg>
-                </a>
+        <title>Vitor Rodrigues - Web developer</title>
+    </head>
+    <body>
+        <!-- Nav -->
+        <nav>
+            <div class="container">
+                <a class="nav__logo" href="#">VR</a>
+                <ul class="nav__links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#components">Components</a></li>
+                </ul>
             </div>
-            <hr class="hr">
-        </section>
-        <section id="components" class="section components">
-            <h3>Components</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-        <section id="demos" class="section demos">
-            <h3>Demos</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-        <section id="blog" class="section blog">
-            <h3>Blog</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </section>
-    </main>
-    <footer>
-        <div class="social-media">
-            <a class="linkedin" href="https://www.linkedin.com/in/vitorpaulorodrigues" alt="Linkedin">
-                <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
-                    <path
-                        d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z" />
-                </svg>
-            </a>
-            <a class="github" href="https://github.com/vpaulo" alt="Github">
-                <svg fill="#000000" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
-                    <path
-                        d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z">
-                    </path>
-                </svg>
-            </a>
-            <a class="codepen" href="https://codepen.io/vpaulo/" alt="Codepen">
-                <svg fill="#000000" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px">
-                    <path
-                        d="M11.999,2L2.005,8.603l-0.006,6.795L11.993,22l9.994-6.603l0.006-6.795L11.999,2z M11.999,14l-3-2l3-2l3,2L11.999,14z M12.999,8.263V5.058l6.234,4.119l-2.432,1.621L12.999,8.263z M10.999,8.263l-3.802,2.535L4.765,9.177l6.234-4.119V8.263z M5.394,12l-1.393,0.929l0.002-1.856L5.394,12z M7.197,13.202l3.802,2.535v3.209l-6.237-4.121L7.197,13.202z M12.999,15.737l3.802-2.535l2.429,1.619l-6.232,4.117V15.737z M18.604,12l1.387-0.925l-0.002,1.848L18.604,12z" />
-                </svg>
-            </a>
-        </div>
-        <ul class="footer__links">
-            <li><a class="link" href="/ui" alt="Styleguide">Styleguide</a></li>
-        </ul>
-        <p class="copyright">&#169; 2020 <a href="https://vpaulo.github.io/"><strong>Vitor Rodrigues</strong></a> All Rights Reserved.</p>
-    </footer>
-</body>
+        </nav>
 
+        <!-- About / CV -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__grid">
+                    <!-- Left: intro -->
+                    <div class="about__intro">
+                        <h3>Hi, I'm</h3>
+                        <h1>Vitor Rodrigues</h1>
+                        <h2>Web Developer</h2>
+                        <p class="about__bio">
+                            I build thoughtful, performant interfaces for the web. Passionate about clean code, design
+                            systems, and making complex things feel simple. When I'm not coding, I'm designing tools
+                            that make coding better.
+                        </p>
+                        <div class="about__links">
+                            <a class="linkedin" href="https://www.linkedin.com/in/vitorpaulorodrigues" alt="Linkedin">
+                                <svg
+                                    fill="#000000"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="32px"
+                                    height="32px"
+                                >
+                                    <path
+                                        d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"
+                                    />
+                                </svg>
+                            </a>
+                            <a class="github" href="https://github.com/vpaulo" alt="Github">
+                                <svg
+                                    fill="#000000"
+                                    viewBox="0 0 30 30"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="32px"
+                                    height="32px"
+                                >
+                                    <path
+                                        d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <!--<a class="codepen" href="https://codepen.io/vpaulo/" alt="Codepen">
+                                <svg
+                                    fill="#000000"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="32px"
+                                    height="32px"
+                                >
+                                    <path
+                                        d="M11.999,2L2.005,8.603l-0.006,6.795L11.993,22l9.994-6.603l0.006-6.795L11.999,2z M11.999,14l-3-2l3-2l3,2L11.999,14z M12.999,8.263V5.058l6.234,4.119l-2.432,1.621L12.999,8.263z M10.999,8.263l-3.802,2.535L4.765,9.177l6.234-4.119V8.263z M5.394,12l-1.393,0.929l0.002-1.856L5.394,12z M7.197,13.202l3.802,2.535v3.209l-6.237-4.121L7.197,13.202z M12.999,15.737l3.802-2.535l2.429,1.619l-6.232,4.117V15.737z M18.604,12l1.387-0.925l-0.002,1.848L18.604,12z"
+                                    />
+                                </svg>
+                            </a>-->
+                            <a class="btn" href="/cv.html" target="_blank">Resume</a>
+                        </div>
+                    </div>
+                    <!-- Right: CV -->
+                    <div class="about__cv">
+                        <div class="cv__section">
+                            <div class="cv__section-title">Experience</div>
+                            <div class="cv__item">
+                                <div class="cv__item-header">
+                                    <span class="cv__item-title">Senior Software Engineer</span>
+                                    <span class="cv__item-date">Sept 2022 — present</span>
+                                </div>
+                                <div class="cv__item-org">CMC Markets</div>
+                                <div class="cv__item-desc">
+                                    Maintaining and improving the Trading platform. Migrating features to micro
+                                    frontends and web components. Built a Figma CLI tool to extract designs into web
+                                    components.
+                                </div>
+                            </div>
+                            <div class="cv__item">
+                                <div class="cv__item-header">
+                                    <span class="cv__item-title">Senior Software Engineer</span>
+                                    <span class="cv__item-date">Feb 2021 — Sept 2022</span>
+                                </div>
+                                <div class="cv__item-org">Mimecast</div>
+                            </div>
+                            <div class="cv__item">
+                                <div class="cv__item-header">
+                                    <span class="cv__item-title">Developer → Technical Specialist</span>
+                                    <span class="cv__item-date">May 2015 — Feb 2021</span>
+                                </div>
+                                <div class="cv__item-org">IG Group</div>
+                            </div>
+                            <div class="cv__item">
+                                <div class="cv__item-header">
+                                    <span class="cv__item-title">Front-end Developer</span>
+                                    <span class="cv__item-date">2011 — Apr 2015</span>
+                                </div>
+                                <div class="cv__item-org">Asseco PST</div>
+                            </div>
+                        </div>
+                        <div class="cv__section">
+                            <div class="cv__section-title">Education</div>
+                            <div class="cv__item">
+                                <div class="cv__item-header">
+                                    <span class="cv__item-title">Universidade da Madeira</span>
+                                    <span class="cv__item-date">2011</span>
+                                </div>
+                                <div class="cv__item-org">Licentiate degree, Computer Science</div>
+                            </div>
+                        </div>
+                        <div class="cv__section">
+                            <div class="cv__section-title">Skills</div>
+                            <div class="skills">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Go</span>
+                                <span class="skill-tag">Jest</span>
+                                <span class="skill-tag">Playwright</span>
+                                <span class="skill-tag">SQLite</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Accessibility</span>
+                                <span class="skill-tag">Performance</span>
+                                <span class="skill-tag">Design Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section__label">Work</div>
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__grid">
+                    <div class="project-card">
+                        <span class="project-card__status status--active">Active</span>
+                        <h3 class="project-card__title">Rminder</h3>
+                        <p class="project-card__desc">
+                            A fast, minimal task management app built for individuals. No subscriptions, no complexity —
+                            just your work.
+                        </p>
+                        <div class="project-card__stack">
+                            <span class="stack-tag">Go</span>
+                            <span class="stack-tag">HTMX</span>
+                            <span class="stack-tag">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="project-card__status status--done">Done</span>
+                        <h3 class="project-card__title">Seda</h3>
+                        <p class="project-card__desc">A scripting language designed for simplicity.</p>
+                        <div class="project-card__stack">
+                            <span class="stack-tag">Go</span>
+                            <span class="stack-tag">MVP</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="project-card__status status--done">Done</span>
+                        <h3 class="project-card__title">Figo</h3>
+                        <p class="project-card__desc">
+                            Figma components exporter lib to help creating HTML and CSS from Figma designs.
+                        </p>
+                        <div class="project-card__stack">
+                            <span class="stack-tag">Go</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="project-card__status status--wip">On Hold</span>
+                        <h3 class="project-card__title">Figo UI</h3>
+                        <p class="project-card__desc">Figo lib visualiser of the Figma exported designs.</p>
+                        <div class="project-card__stack">
+                            <span class="stack-tag">Go</span>
+                            <span class="stack-tag">Wails</span>
+                            <span class="stack-tag">HTML</span>
+                            <span class="stack-tag">CSS</span>
+                            <span class="stack-tag">JS</span>
+                            <span class="stack-tag">POC</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="project-card__status status--wip">On Hold</span>
+                        <h3 class="project-card__title">Folha</h3>
+                        <p class="project-card__desc">Canvas based text editor.</p>
+                        <div class="project-card__stack">
+                            <span class="stack-tag">Go</span>
+                            <span class="stack-tag">Wails</span>
+                            <span class="stack-tag">HTML</span>
+                            <span class="stack-tag">CSS</span>
+                            <span class="stack-tag">JS</span>
+                            <span class="stack-tag">MVP</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <span class="project-card__status status--done">Done</span>
+                        <h3 class="project-card__title">Portfolio v2</h3>
+                        <p class="project-card__desc">
+                            Redesign and rebuild of this personal portfolio. No frameworks, pure HTML and CSS.
+                        </p>
+                        <div class="project-card__stack">
+                            <span class="stack-tag">HTML</span>
+                            <span class="stack-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components -->
+        <section class="components" id="components">
+            <div class="container">
+                <div class="section__label">UI Kit</div>
+                <h2 class="section__title">Components</h2>
+                <div class="components__grid">
+                    <div class="component-card">
+                        <div class="component-card__preview">
+                            <p>Comming soon...</p>
+                        </div>
+                        <div class="component-card__info">
+                            <div class="component-card__name">N/A</div>
+                            <div class="component-card__type">N/A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&#169; 2026 Vitor Rodrigues</p>
+                <p>Built with plain HTML &amp; CSS</p>
+            </div>
+        </footer>
+    </body>
 </html>
